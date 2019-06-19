@@ -1,0 +1,10 @@
+<div id="middle">
+  <div class="display-2" style="color: rgba(175, 47, 47, 0.40)">todos</div>
+  <input (keyup)="validate($event)" type="text" placeholder="Add new task" class="form-group w-25" aria-label="Small"
+         aria-describedby="inputGroup-sizing-sm">
+  <div *ngFor="let task of temp" class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="{{task}}">
+    <label class="custom-control-label" for="{{task}}">{{task}}</label>
+  </div>
+</div>
+
